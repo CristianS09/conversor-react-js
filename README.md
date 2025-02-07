@@ -7,7 +7,9 @@ Este projeto foi desenvolvido utilizando React JS com Typescript e utiliza a api
 
 [![conversor-2.png](https://i.postimg.cc/8PHbt4d5/conversor-2.png)](https://postimg.cc/dLhd08xP)
 
-## Tecnologias Utilizadas
+## Link para testar o app: [conversor](https://conversor-react-js.vercel.app/)
+
+### Tecnologias Utilizadas
 
 - **Typescript**;
 - **React JS**;
