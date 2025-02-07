@@ -1,0 +1,79 @@
+h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+p {
+    color: #3ac735;
+    font-weight: 900;
+    font-size: 29px;
+    padding: 2px;
+}
+
+.resultado {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input {
+    background-color: #212121;
+    color: #fff;
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    height: 30px;
+    margin: 1em;
+    border-radius: 9px;
+    border: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+#dolar {
+    font-size: 16px;
+    color: #fff;
+    width: 380px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    background-color: #118B50;
+    margin: 0.5em;
+    transition: 0.5s;
+}
+
+#dolar:hover {
+    cursor: pointer;
+    background-color: #123524;
+}
+
+#real {
+    font-size: 16px;
+    color: #fff;
+    width: 380px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    background-color: #3674B5;
+    margin: 0.5em;
+    transition: 0.5s;
+}
+
+#real:hover {
+    cursor: pointer;
+    background-color: #27445D;
+}
+
+@media only screen and (max-width: 600px) {
+    .resultado {
+        flex-direction: column;
+    }
+
+    #dolar,
+    #real {
+        width: 260px;
+    }
+}

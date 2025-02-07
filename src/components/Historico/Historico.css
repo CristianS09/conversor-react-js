@@ -1,0 +1,23 @@
+.historico {
+    width: 350px;
+    padding: 5px;
+    height: auto;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 8px;
+}
+
+.historico p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.historico h3 {
+    color: #3ac735;
+    font-size: 20px;
+    font-weight: 900;
+}
