@@ -21,7 +21,8 @@ input {
     background-color: #212121;
     color: #fff;
     width: auto;
-    font-size: 16px;
+    font-size: 17px;
+    padding: 5px;
     text-align: center;
     height: 30px;
     margin: 1em;

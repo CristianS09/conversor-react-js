@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './Conversor.css';
-import dolar from '../assets/dolar.png'
-import Historico from "./Historico/Historico";
+import dolar from '../../assets/dolar.png'
+import Historico from "../Historico/Historico";
 function Conversor() {
 
 
@@ -46,7 +46,7 @@ function Conversor() {
             //Atribui o resultado para o useState
             setExibirValor(resultado);
             //Adiciona os valores no array para exibir o histórico
-            historico.push({ tipoConversao: 'Dolar para Real', valorAdicionado: event.concat('R$'), valor: resultado.replace('=', ''), date: new Date() });
+            historico.push({ tipoConversao: 'Dolar para Real', valorAdicionado: event.concat('USD'), valor: resultado.replace('=', ''), date: new Date() });
         } else {
             //Alerta caso o campo esteja vázio
             alert('O campo está vázio');
@@ -65,7 +65,7 @@ function Conversor() {
             //Atribui o resultado para o useState
             setExibirValor(resultado);
             //Adiciona os valores no array para exibir o histórico
-            historico.push({ tipoConversao: 'Real para Dolar', valorAdicionado: event.concat('USD'), valor: resultado.replace('=', ''), date: new Date() });
+            historico.push({ tipoConversao: 'Real para Dolar', valorAdicionado: event.concat('R$'), valor: resultado.replace('=', ''), date: new Date() });
         } else {
             //Alerta caso o campo esteja vázio
             alert('O campo está vázio');
@@ -93,7 +93,7 @@ function Conversor() {
         <img src={dolar} width={150} />
         <h1>Conversor</h1>
         <div className="resultado">
-            <input onChange={valorInput} type="number" placeholder="Valor para converção" min={0} />
+            <input onChange={valorInput} type="number" placeholder="Valor da converção" min={0} />
             <p> {exibirValor}</p>
         </div>
         <button onClick={dolarParaReal} id="dolar">Converter Dolar para Real</button>
